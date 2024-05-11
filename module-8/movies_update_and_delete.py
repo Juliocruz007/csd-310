@@ -32,8 +32,8 @@ film_name = "Iron Man"
 film_releaseDate = "2008"
 film_runtime = 126
 film_director = "Jon Favreau"
-studio_id = 1  # Assuming '20th Century Fox' studio id is 1
-genre_id = 2   # Assuming 'SciFi' genre id is 2
+studio_id = 1  
+genre_id = 2   
 
 # Execute the SQL INSERT statement
 cursor.execute("INSERT INTO film (film_name, film_releaseDate, film_runtime, film_director, studio_id, genre_id) VALUES (%s, %s, %s, %s, %s, %s)", (film_name, film_releaseDate, film_runtime, film_director, studio_id, genre_id))
